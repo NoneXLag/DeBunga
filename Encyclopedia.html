@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De' Bunga</title>
+    <link rel="icon" type="image/x-icon" href="asset/icons8-flower-32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+            /* CSS code is embedded directly */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+
+    body {
+      font-family: "Ubuntu", serif;
+      background-color: #b6ccb6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #b6ccb6;
+      padding: 30px 0;
+      border-bottom: 1px solid black;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+       font-family: "Ubuntu", serif;
+        font-weight: 300;
+         font-style: normal;
+         transition: all 0.3s ease; /* Smooth hover effect */
+    }
+
+    .navbar a:hover {
+      font-weight: bolder; /* Makes the text bold */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds shadow */
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 0.25fr 0.25fr;
+      gap: 0px; /* Small space between items */
+      height: calc(100vh - 80px); /* Full viewport height minus navbar height */
+    }
+    .container2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.33fr 0.33fr 0.33fr 1fr;
+        gap: 0px; /* Small space between items */
+    }
+
+    .box {
+      background-color: #b6ccb6;
+      display: flex;
+      font-weight: bold;
+    }
+
+    
+    .box1 {
+        grid-column: 2 / 6; /* Occupies the second column */
+        grid-row: 1 / 2; /* Spans two rows */
+        display: flex; /* Enable flexbox */
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center horizontally */
+        text-align: center; /* Ensure text inside is centered */
+        padding-top: 5%;
+        padding-bottom: 0%;
+    }
+
+    .FlowerName h1{
+        font-size: 4vw;
+    }
+
+
+    .box2 {
+        grid-column: 2 / 3; /* Occupies the first column */
+        grid-row: 2 / 3; /* Occupies the first row */
+        padding-bottom: 16%;
+    }
+
+    .box3 {
+      grid-column: 2 / 3; /* Occupies the first column */
+      grid-row: 3 / 4; /* Occupies the first row */
+      padding-bottom: 16%;
+    }
+
+    .box4 {
+      grid-column: 2 / 3; /* Occupies the first column */
+      grid-row: 4 / 5; /* Occupies the first row */
+      padding-bottom: 16%;
+    }
+
+    .box5 {
+      grid-column: 3 / 4; /* Occupies the first column */
+      grid-row: 3 / 4; /* Occupies the first row */
+      padding-bottom: 16%;
+    }
+
+    .box6 {
+      grid-column: 3 / 4; /* Occupies the first column */
+      grid-row: 4 / 5; /* Occupies the first row */
+      padding-bottom: 16%;
+    }
+
+    .box7 {
+      grid-column: 4; /* Occupies the first column */
+      grid-row: 3 / 4; /* Occupies the first row */
+      padding-bottom: 16%;
+    }
+
+    .box8 {
+      grid-column: 4; /* Occupies the first column */
+      grid-row: 4 / 5; /* Occupies the first row */
+      padding-bottom: 16%;
+    }
+
+    .box9 {
+      grid-column: 5; /* Occupies the first column */
+      grid-row: 3 / 4; /* Occupies the first row */
+      padding-bottom: 16%;
+    }
+
+    #Desc{
+      font-size: 20px;
+    }
+
+    table {
+    width: 100%; /* Full width of the box */
+    border-collapse: collapse; /* Merge table borders */
+    margin: 0 auto; /* Center the table */
+    font-size: 1vw; /* Adjust the text size */
+    background-color: #b6ccb6; /* Light background for table */
+    }
+
+    th, td {
+        border: 3px solid black; /* Border for each cell */
+        text-align: left; /* Align text to the left */
+        padding: 10px; /* Add padding to cells */
+    }
+
+    th {
+        background-color: #b6ccb6; /* Header background color */
+        font-weight: bold; /* Bold text for headers */
+    }
+
+    .search-bar {
+    display: flex;
+    align-items: center;
+    width: 500px; /* Adjust the width as needed */
+    border: 2px solid black;
+    border-radius: 40px; /* Makes it rounded */
+    background-color: #f7f7f7;
+    overflow: hidden; /* Ensures no content overflows the border */
+    }
+
+    .search-bar input {
+    flex: 1; /* Makes the input take up available space */
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    }
+
+    .search-bar button {
+    border: none;
+    background: none;
+    padding: 10px;
+    cursor: pointer;
+    }
+
+    .search-bar button img {
+    width: 40px; /* Adjust the size of the magnifying glass icon */
+    height:40px;
+    }
+
+    #alphabet {
+    border: 1px solid black; /* Border around the box */
+    background-color: black; /* Black background for the box */
+    color: white; /* White font color */
+    text-align: center; /* Center the text horizontally */
+    width: 50px; /* Width of the box */
+    height: 50px; /* Height of the box */
+    line-height: 50px; /* Centers the text vertically */
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold; /* Make the font bold */
+    border-radius: 5px; /* Optional: Slightly round the box corners */
+}
+
+    .hover-underline {
+    text-decoration: none;
+    color: inherit; /* Ensures it takes the color of surrounding text */
+    }
+
+    .hover-underline:hover {
+    text-decoration: underline;
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="mainpage.html" style="font-weight: bolder;  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">HOME</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="Encyclopedia.html">ENCYCLOPEDIA</a>
+      <a href="community.html">COMMUNITY</a>
+      <a href="contactUs.html">CONTACT US</a>
+      <a href="ExploreMap.html">EXPLORE MAP</a>
+    </div>
+
+    <div class="container">
+        <div class="box box1">
+           <div class="FlowerName">
+            <h1>Flower Encyclopedia</h1><br>
+           </div>
+           <br>
+           <div class="search-bar">
+            <input type="text" placeholder="">
+            <button type="submit">
+                <img src="asset/search-icon.png" alt="Search" />
+            </button>
+            </div>
+        </div>
+        <div class="box box2">
+             <h1 id = "alphabet">A</h1>
+         </div>
+         <div class="box box3">
+            <h2><a href="AfricanLily.html" class="hover-underline">African Lily</a></h2>
+        </div>
+        <div class="box box5">
+            <h2><a href="Agapanthus.html" class="hover-underline">Agapanthus</a></h2>
+        </div>
+        <div class="box box7">
+            <h2><a href="Ageratum.html" class="hover-underline">Ageratum</a></h2>
+        </div>
+        <div class="box box9">
+            <h2><a href="Abelia.html" class="hover-underline">Abelia</a></h2>
+        </div>
+        <div class="box box4">
+            <h2><a href="Allium.html" class="hover-underline">Allium</a></h2>
+        </div>
+        <div class="box box6">
+            <h2><a href="Alchemilla.html" class="hover-underline">Alchemilla</a></h2>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="box box2">
+            <h1 id="alphabet">B</h1>
+        </div>
+        <div class="box box3">
+            <h2><a href="Begonia.html" class="hover-underline">Begonia</a></h2>
+        </div>
+        <div class="box box5">
+            <h2><a href="Bellflower.html" class="hover-underline">Bellflower</a></h2>
+        </div>
+        <div class="box box7">
+            <h2><a href="Bougainvillea.html" class="hover-underline">Bougainvillea</a></h2>
+        </div>
+        <div class="box box9">
+            <h2><a href="Buttercup.html" class="hover-underline">Buttercup</a></h2>
+        </div>
+        <div class="box box4">
+            <h2><a href="Balsam.html" class="hover-underline">Balsam</a></h2>
+        </div>
+        <div class="box box6">
+            <h2><a href="Bluebell.html" class="hover-underline">Bluebell</a></h2>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De' Bunga</title>
+    <link rel="icon" type="image/x-icon" href="asset/icons8-flower-32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+            /* CSS code is embedded directly */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+
+    body {
+      font-family: "Ubuntu", serif;
+      background-color: #b6ccb6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #b6ccb6;
+      padding: 30px 0;
+      border-bottom: 1px solid black;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+       font-family: "Ubuntu", serif;
+      font-weight: 300;
+      font-style: normal;
+      transition: all 0.3s ease; /* Smooth hover effect */
+    }
+
+    .navbar a:hover {
+      font-weight: bolder; /* Makes the text bold */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds shadow */
+    }
+
+    .box-container{
+      margin-top: 130px;
+    }
+    .container {
+        max-width: 1500px; /* Fixed max width for better layout control */
+        margin: 80px auto; /* Centering the container */
+        padding: 20px;
+        background: #fff; /* White background for content */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+
+    .content1 {
+        padding-top: 10px;
+    }
+
+    .c1 {
+        display: flex;
+        gap: 20px; /* Spacing between elements */
+    }
+
+    .c1 h1 {
+        font-size: 2rem;
+        color: #005500;
+        padding-top: 80px;
+    }
+
+    .c1 img {
+        width: 300px; /* Adjusted image size */
+        border-radius: 8px; /* Rounded image corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+    }
+
+    .c2 {
+        margin-top: -350px;
+        padding-left: 320px;
+    }
+
+    .c2 p {
+        font-size: 1.2rem;
+        color: #555; /* Softer text color */
+    }
+
+    .c3 {
+        margin-top: 26px;
+        padding-left: 320px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 1.1rem;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #b6ccb6;
+        color: #333;
+        text-transform: uppercase;
+    }
+
+    td {
+        color: #555;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1; /* Highlight row on hover */
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="mainpage.html" style="font-weight: bolder;  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="Encyclopedia.html">ENCYCLOPEDIA</a>
+        <a href="community.html">COMMUNITY</a>
+        <a href="contactUs.html">CONTACT US</a>
+        <a href="ExploreMap.html">EXPLORE MAP</a>
+    </div>
+
+    <div class="box-container">
+      <div class="container">
+        <div class="content1">
+          <div class="c1">
+              <img src="asset/AfricanLily.jpg"> 
+              <h1>African Lily</h1>
+          </div>
+          <div class="c2">
+            <p>
+                African-lily is generally regarded as an easy-to-care-for perennial. 
+                Key care points include ensuring adequate sunlight exposure and protection from intense afternoon sun. 
+                Additionally, african-lily requires regular watering during the growing season but less during the dormant period. 
+                Not susceptible to many pests, african-lily thrives with minimal intervention, making it ideal for gardeners 
+                seeking low-maintenance plants.  
+            </p>
+          </div>
+          <div class="c3">
+            <table>
+              <thead>
+                  <tr>
+                      <th>Property</th>
+                      <th>Value</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Scientific Name</td>
+                      <td>Agapanthus africanus</td>
+                  </tr>
+                  <tr>
+                      <td>Family</td>
+                      <td>Amaryllidaceae</td>
+                  </tr>
+                  <tr>
+                      <td>Native Region</td>
+                      <td>South Africa</td>
+                  </tr>
+                  <tr>
+                      <td>Blooming Season</td>
+                      <td>Summer</td>
+                  </tr>
+              </tbody>
+          </table>
+
+          </div>
+        </div>
+    </div>
+    </div>
+    
+</body>
+
+</html>

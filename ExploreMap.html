@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De' Bunga</title>
+    <link rel="icon" type="image/x-icon" href="asset/icons8-flower-32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+            /* CSS code is embedded directly */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+
+    body {
+      font-family: "Ubuntu", serif;
+      background-color: #b6ccb6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #b6ccb6;
+      padding: 30px 0;
+      border-bottom: 1px solid black;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+       font-family: "Ubuntu", serif;
+        font-weight: 300;
+         font-style: normal;
+         transition: all 0.3s ease; /* Smooth hover effect */
+    }
+
+    .navbar a:hover {
+      font-weight: bolder; /* Makes the text bold */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds shadow */
+    }
+
+   
+    .container2 {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-rows: 1fr 1fr;
+      height: calc(100vh - 0px); /* Full viewport height minus navbar height */
+    }
+
+    .container3 {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      height: calc(100vh - 0px); /* Full viewport height minus navbar height */
+    }
+
+    .container4 {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-rows: 1fr 1fr;
+      height: calc(100vh - 0px); /* Full viewport height minus navbar height */
+    }
+
+    .box {
+      background-color: #b6ccb6;
+      display: flex;
+      font-weight: bold;
+        }
+
+    
+
+    .box1 {
+        grid-column: 1 / 2; /* Occupies the second column */
+        display: flex; /* Enable flexbox */
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center horizontally */
+        text-align: center; /* Ensure text inside is centered */
+        padding-top: 0%;
+    }
+
+    .FlowerName h1{
+        font-size: 4vw;
+    }
+
+
+    .box2 {
+        grid-column: 2 / 2; /* Occupies the second column */
+        display: flex; /* Enable flexbox */
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center horizontally */
+        text-align: center; /* Ensure text inside is centered */
+        padding-top: 10%;
+    }
+
+    .box3 {
+      grid-column: 2 / 3; /* Occupies the first column */
+      grid-row: 2 / 3; /* Occupies the first row */
+      padding-left: 10%;
+      padding-top: 5%;
+      padding-right: 10%;
+      padding-bottom: 10%;
+    }
+
+    #Desc{
+      font-size: 20px;
+    }
+
+
+
+   .FlowerName iframe{
+    border-radius: 5%;
+   }
+
+    .box1 img {
+        width: 80%; /* Adjust the width as needed (e.g., 50%, 200px, etc.) */
+        height: auto; /* Maintain the aspect ratio */
+        display: block; /* Center the image (optional, if needed) */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+
+    .box2 img {
+        width: 98%; /* Adjust the width as needed (e.g., 50%, 200px, etc.) */
+        height: auto; /* Maintain the aspect ratio */
+        display: block; /* Center the image (optional, if needed) */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="mainpage.html" style="font-weight: bolder;  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">HOME</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="Encyclopedia.html">ENCYCLOPEDIA</a>
+      <a href="community.html">COMMUNITY</a>
+      <a href="contactUs.html">CONTACT US</a>
+      <a href="ExploreMap.html">EXPLORE MAP</a>
+    </div>
+
+    <div class="container2">
+      <div class ="box box1" style="padding-top: 10%;">
+        <img src="asset/flower-bungaraya.png">
+      </div>
+        <div class="box box2">
+           <div class="FlowerName">
+            <h1>Find Florist Nearby</h1><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11677.178648287398!2d103.13560078362347!3d5.333124881536936!2m3!1f0!2f0!3f0!3m2
+            !1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7be76ff25c787%3A0x81a314a2508c0fe4!2sMelia%20Florist%20%26%20Gifts!5e0!3m2!1sen!2smy!4v1736403488946!5m2!1sen!2smy" 
+            width="500" height="500" style="border:3px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="box box1">
+           <div class="FlowerName" style="padding-top: 15%;">
+            <h1>Explore Habitat</h1><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8149888.235548686!2d104.31662420378572!3d4.133983214743352!2m3!1f0!2f0!3f0!3m2
+            !1i1024!2i768!4f13.1!3m3!1m2!1s0x3034d3975f6730af%3A0x745969328211cd8!2sMalaysia!5e0!3m2!1sen!2smy!4v1736404296357!5m2!1sen!2smy" 
+            width="500" height="500" style="border:3px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+        </div>
+        <div class="box box2" style="padding-top: 29%; padding-right: 20%;">
+          <img src="asset/flower-purple.png" style="width: 120%;">
+        </div>
+    </div>
+
+</body>
+
+</html>
